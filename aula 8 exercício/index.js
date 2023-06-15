@@ -15,9 +15,9 @@
  console.log(imc);
  console.log(anoNascimento);
 
- console.log(`${nome} ${sobrenome} tem ${idade} anos,`);
- console.log(`sua altura é de ${alturaM}, pesa ${peso}, e seu`);
- console.log(`imc é de ${imc}.`)
+ console.log(`${nome} ${sobrenome} tem ${idade} anos,`); // template string
+ console.log(`sua altura é de ${alturaM}, pesa ${peso}, e seu`); // template string
+ console.log(`imc é de ${imc}.`) // template string
 
 
 
