@@ -29,10 +29,15 @@ console.log(contador3)
 
 //NaN - Not a number
 const num5 = 10;
-const num6 = parseInt ("5");
+const num6 = parseInt ("5"); // parseInt conversão para inteiro.
 console.log(num5 + num6);
 
 const num7 = 10;
-const num8 = parseFloat ("5.3");
+const num8 = parseFloat ("5.3"); // parseFloat conversão para números decimais.
 console.log(num7 + num8);
+
+const num9 = 10;
+const num10 = Number ("5.3"); // terceira maneira de usar a conversão de números.
+console.log(num8 + num9);
+
 
