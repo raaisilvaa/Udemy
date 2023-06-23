@@ -17,7 +17,7 @@ console.log(umaString.match(/[a-z]/g)) // expressões regulares.
 
 console.log(umaString.match(/[a-z]/)) // expressões regulares.
 
-console.log(umaString.search(/x/)) // ele retorna aonde o índice foi encontrado.
+console.log(umaString.search(/x/)) // ele retorna aonde o índice foi encontrado..
 
 
 console.log(umaString.replace('Um', 'Outro')) // substituição de caracteres.
@@ -34,7 +34,7 @@ console.log(umaString.slice(-5, -1)); // começando do final, menos - o que quer
 
 console.log(umaString.slice(1, 6));
 
-console.log(umaString.split(' '));
+console.log(umaString.split(' ')); // separação de cada palavra.
 
 console.log(umaString.split(' r '));
 
