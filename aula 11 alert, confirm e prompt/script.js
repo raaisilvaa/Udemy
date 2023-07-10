@@ -5,3 +5,4 @@ num1 = Number(num1);
 num2 = Number(num2);
 alert(`O resultado entre as duas somas foi de ${num1 + num2}`);
 
+// let num1 = Number(prompt('Digite um número')); forma direta de se fazer.
