@@ -1,28 +1,30 @@
-const form = document.querySelector('.form');
-const resultado = document.querySelector('.resultado');
+function meuFormulario () {
+    const form = document.querySelector('.form');
+    const resultado = document.querySelector('.resultado');
 
-function validaNome(e) {
-    e.preventDefault();
-
-    const nome = form.querySelector('.nome');
-    const sobrenome = form.querySelector('.sobrenome');
-    const peso = form.querySelector('.peso');
-    const altura = form.querySelector('.altura');
-
-    pessoas.push({
-        nome: nome.value,
-        sobrenome: sobrenome.value,
-        peso: peso.value,
-        altura: altura.value,
-    })
-
-    form.addEventListener('submit', validaNome);
-
-    console.log(nome.value, sobrenome.value, peso.value, altura.value);
-};
+    const pessoas = [];
 
 
+    function dentroFormulario (evento) {
+        evento.preventDefault();
 
+        const nome = document.querySelector('.nome');
+        const sobrenome = document.querySelector('.sobrenome');
+        const peso = document.querySelector('.peso');
+        const altura = document.querySelector('.altura');
+
+        pessoas.push ({
+            nome: nome.value,
+            sobrenome: sobrenome.value,
+            peso: peso.value,
+            altura: altura.value,
+        });
+        console.log(nome.value, sobrenome.value, peso.value, altura.value);
+        resultado.innerHTML += `<p><strong>Seu nome é ${nome.value} ${sobrenome.value}, seu peso é de ${peso.value} e sua altura é ${altura.value}!</p></strong>`;
+    }
+    form.addEventListener('submit', dentroFormulario);
+}
+meuFormulario();
 
 
 
