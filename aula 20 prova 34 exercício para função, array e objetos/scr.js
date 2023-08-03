@@ -1,13 +1,13 @@
-// selecionando o formulário.
+// selecionando o formulário através da sua class.
 function formulario() {
     const form = document.querySelector('.form');
     const resultado = document.querySelector('.form');
 
     const pessoas = []; //array vazio para preenchimento do formulário.
 
-    //selecionando as inputs dentro do formulário.
+    //selecionando as inputs/classes dentro do formulário.
     function validaFormulario(e) {
-        e.preventDefault(); // previne o comportamento padrão de um objeto.
+        e.preventDefault(); // previne o comportamento padrão de um objeto/prevenir de não atualizar a página.
 
         const nome = form.querySelector('.nome');
         const sobrenome = form.querySelector('.sobrenome');
@@ -28,6 +28,6 @@ function formulario() {
 
 
     }
-    form.addEventListener('submit', validaFormulario);
+    form.addEventListener('submit', validaFormulario); //prevenir de não atualizar a página ao clicar no botão.
 }
 formulario();
