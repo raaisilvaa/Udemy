@@ -11,9 +11,7 @@ Operadores de comparação:
 */
 
 const num1 = 55;
-const num2 = 10;
-const resultado = num1 > num2;
+const num2 = 55;
+const resultado = num1 !== num2;
 
 console.log(resultado);
-
-let array2 = "Sol";
