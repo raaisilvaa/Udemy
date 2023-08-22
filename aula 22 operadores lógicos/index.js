@@ -17,5 +17,9 @@ const senha = '123456';
 const vaiLogar = usuario === 'Luiz' && senha === '123456';
 console.log(vaiLogar); */
 
-console.log(!true); //transformando o true em false e vice e versa.
+console.log(!true); //transformando o true em false e vice e versa. !!true inverte de novo
 
+const email = 'raaisilvaa@hotmail.com';
+const senha = 'Camaleao01@';
+const autenticacao = email === 'raaisilvaa@hotmail.com' && senha === 'Camaleao01@';
+console.log(autenticacao);
