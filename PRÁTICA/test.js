@@ -28,7 +28,7 @@ if (idade1 >= 18) {
 	console.log("Não pode entrar, pois não está acompanhado!");
 }
 */
-
+/*
 let monitoramento = Number(prompt('Qual sua idade?'));
 let naoAcompanhada = false;
 
@@ -37,3 +37,6 @@ if (monitoramento >= 18) {
 } else if (naoAcompanhada === false) {
 	console.log('Acesso negadoS!!!');
 }
+*/
+
+
