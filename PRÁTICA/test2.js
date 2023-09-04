@@ -5,12 +5,12 @@
 */
 
 const form = document.querySelector('#form-deposito');
-
+// validando seu nome se ele possuir mais de dois nomes como nome e sobrenome.
 function validaNome(nomeCompleto) {
-    const nomeComoArray = nomeCompleto.split(' ');
-    return nomeComoArray.length >= 2;
+    const nomeComoArray = nomeCompleto.split(' '); // separando o nome e sobrenome com espaços.
+    return nomeComoArray.length >= 2; // length: mínimo dois nomes.
 }
-
+// cancelando a atualização padrão do formulário.
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -22,6 +22,11 @@ form.addEventListener('submit', function(e) {
     formEvalido = validaNome(nomeBeneficiario.value)
     if (formEvalido) {
         alert(mensagemSucesso)
+        // .value = pega o valor que a pessoa digitou.
+        nomeBeneficiario.value = '';
+        numeroBeneficiario.value = '';
+        valorDeposito.value = '';
+
     } else {
         alert('O nome está incompleto');
     }
