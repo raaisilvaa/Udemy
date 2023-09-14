@@ -32,7 +32,7 @@ form input, form label, form button {
 }
 
 form input {
-    font-size: 24px;
+    font-size: 24px; // aumenta o tamanho do texto selecionado.
     height: 50px;
     padding: 0 20px;
 }
