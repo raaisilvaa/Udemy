@@ -14,4 +14,3 @@ function setResultado (msg) {
   p.innerHTML = 'Qualquer coisa';
   resultado.appendChild(p);
 }
-

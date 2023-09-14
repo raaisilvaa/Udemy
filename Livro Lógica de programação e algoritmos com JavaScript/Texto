@@ -1,0 +1,79 @@
+Lógica de programação envolve:
+1- Compreender o que é pedido: leia e releia, compreenda o problema a ser solucionado, se não vocÊ ficará frustado. Então perca o tempo que precisar para entender o problema.
+2- Realizar deduções na construção do programa, exemplo:
+
+1- Caio está no Brasil ou na Argentina?
+2- Caio não está na Argentina!
+Considerando as afirmações:
+3 - Caio está no Brasil!
+
+1- A bicicleta está na rua ou na casa da avó?
+2- A bicicleta não está na rua!
+Considerando as afirmações:
+3- A bicicleta está na avó!
+
+Deduzir conclusões será vital para deduzir sobre quais controles devem ser utilizados para melhor solucionar um problema.
+
+3- Enumerar as etapas a serem realizadas: algumas ações realizadas em um programa seguem uma lógica sequencial,
+ou seja, um comando (ação) é realizado após o outro.
+Algumas ações realizadas em um programa seguem uma lógica sequencial,
+ou seja, um comando (ação) é realizado após o outro. Vamos continuar no
+exemplo do carro na garagem. Para sair com o carro, é necessário:
+
+1. Abrir a porta do carro.
+2. Entrar no carro.
+3. Ligar o carro.
+4. Abrir o portão da garagem.
+5. Engatar a marcha ré.
+6. Sair com o carro da garagem.
+7. Fechar o portão.
+8. Engatar a primeira marcha.
+9. Dirigir ao destino.
+
+Algumas dessas ações poderiam exigir a criação de condições,por exemplo, o que deve ser feito se o carro não ligar?
+
+4- Analisar outras possibilidades de solução: Tenho três amigos e quero saber quem faz aniversário mais perto da data atual.
+Como resolver esse problema?
+
+1. Descobrir a maior idade.
+2. Descobrir a segunda maior idade.
+3. Somar as duas idades maiores.
+OU
+1. Descobrir quem tem a menor idade.
+2. Somar a idade dos outros dois.
+
+Quando deparar com um problema que você está com dificuldades
+para resolver de uma forma, respire um pouco... Tome uma água... Tente
+pensar se poderia existir outra forma de solucioná-lo.
+
+5- Ensinar ao computador uma solução: Um exemplo simples: você precisa calcular o número total de horas de uma
+viagem, expressa em dias e horas. Uma viagem para Florianópolis dura 2 dias e 5 horas, por exemplo.
+Qual é a duração total dessa viagem em número de horas?
+48+5= 53 horas.
+Na resolução de um algoritmo, é necessário ensinar ao computador quais operações devem ser realizadas para se chegar a uma solução correta
+para o problema. Ou seja, deve-se primeiro entender como solucionar o problema para depois passá-lo para o algoritmo.
+
+6- Pensar em todos os detalhes: comparação de uma receita de bolo:
+Na montagem de uma receita de bolo, temos os ingredientes (como os dados de entrada), as ações a serem realizadas sobre os
+ingredientes (processamento) e o resultado esperado, que é o bolo em si (como os dados de saída). Esquecer algum ingrediente
+ou detalhe de alguma ação certamente fará com que o bolo não fique conforme o planejado.
+
+1. Pegar uma caixa de fósforo.
+2. Abrir a caixa de fósforo.
+3. Verificar se tem palito. Se Sim:
+3.1 Retirar um palito.
+3.2 Fechar a caixa.
+3.3 Riscar o palito.
+3.4 Verificar se acendeu. Se Sim:
+3.4.1 Ok! Processo Concluído.
+3.5 Se não: Retornar ao passo? // Qual passo? Se não especificarmos qual passo o código começa a ser infinito.
+4. Se não: Descartar a caixa e retornar ao passo 1.
+
+Comandos sequencias: uma ação realizada após a outra como 1-, 2-, etc.
+Comandos para definição de condições: servem para determinar quais comandos serão executados a partir da análise de uma condiçao.
+Se  uma condição retornar verdadeiro, o programa segue por um caminho, se falso, por outro. (3. Verificar se tem palito? ou 3.4, Verificar se
+acendeu?)
+Estruturas de repetições: indicam que uma ação ou conjunto de ações devem ocorrer várias vezes  (retornar ao passo 2 e retornar ao passo
+1). Nessas estruturas, é preciso indicar quantas vezes a repetição vai ocorrer ou criar algum ponto de saída no laço.
+
+
