@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /* Elaborar um programa que leia o valor de um jantar. Calcule e informe
+    o valor da taxa do garçom (10%) e o valor total a ser pago.
+    */
+
+    const valorJantar = Number(prompt("Qual o valor do jantar?"));
+    const taxaGarcom = valorJantar * 0.10;
+    const totalPagar = valorJantar + taxaGarcom;
+
+    alert(`O valor do jantar foi de ${valorJantar.toFixed(2)} e a taxa do garçom foi de 
+    ${taxaGarcom.toFixed(2)}, totalizando o valor de ${totalPagar.toFixed(2)} reais`);
+    //toFixed é usado para exibir casas decimais.
+    </script>
+</body>
+</html>
