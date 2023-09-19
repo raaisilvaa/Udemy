@@ -1,11 +1,14 @@
-// cria referência ao form e ao elemento h3 (onde será exibida a resposta)
-const form = document.querySelector("#form");
-const resp = document.querySelector("h3");
+const form = document.querySelector("#formulario");
+const titulo = document.querySelector("h3");
+const duracao = document.querySelector("h4");
 
-// cria um "ouvinte" de evento, acionado quando o botão submit for clicado
-form.addEventListener("submit", function (e) {
-    e.preventDefault() // evita envio do form
-    const nome = form.inNome.value; // obtém o nome digitado no form utilizado o ID INPUT no HTML
-    resp.innerText = `Olá ${nome}`; // exibe a resposta do programa ao clicar em submit.
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+    const titulo2 = form.inTitulo.value; // obtém o conteúdo do campo título.
+    const duracao2 = Number(form.inDuracao.value); // obtém o conteúdo do campo duração.
+    const horas = Math.floor(duracao2 / 60); // arredonda para baixo resultado.
+    const minutos = duracao2 % 60;  // obtém o resto da divisão.
+    titulo.innerText = `${titulo2}`;
+    duracao.innerText = `${horas}hora(s) ${minutos}minuto(s)`;
 })
-//outerText: ao clicar em submit o texto aparece do lado da caixinha.

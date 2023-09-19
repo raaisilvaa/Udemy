@@ -1,14 +1,18 @@
 const form = document.querySelector("#formulario");
-const titulo = document.querySelector("h3");
-const duracao = document.querySelector("h4");
+const resp1 = document.querySelector("#outResp1");
+const resp2 = document.querySelector("#outResp2");
+const resp3 = document.querySelector("#outResp3");
 
 form.addEventListener("submit", function(e) {
     e.preventDefault();
-    
-    const titulo2 = form.inTitulo.value; // obtém o conteúdo do campo título.
-    const duracao2 = Number(form.inDuracao.value); // obtém o conteúdo do campo duração.
-    const horas = Math.floor(duracao2 / 60); // arredonda para baixo resultado.
-    const minutos = duracao2 % 60;  // obtém o resto da divisão.
-    titulo.innerText = `${titulo2}`;
-    duracao.innerText = `${horas}hora(s) ${minutos}minuto(s)`;
+
+    const veiculo = form.inVeiculo.value;
+    const preco = Number(form.inPreco.value);
+
+    const promocao = preco * 0.5;
+    const parcela12x = promocao / 12;
+
+    resp1.innerText = `Promoção: ${veiculo}`;
+    resp2.innerText = `Entrada de: R$${promocao.toFixed(2)}`;
+    resp3.innerText = `+12x de ${parcela12x.toFixed(2)}`;
 })
