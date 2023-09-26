@@ -12,4 +12,3 @@ let num1 = 9.548758;
 //console.log(Math.PI); // valor de PI.
 
 console.log(!(100 / 0));
-
